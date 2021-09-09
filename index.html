@@ -8,7 +8,7 @@
     <!----=========UNICONS=====------>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!------======CSS======------->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -65,7 +65,7 @@
 
     <!------------main start------------->
     <main class="main">
-        <!--------home------->
+        <!----===== HOME =====---->
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
@@ -81,12 +81,20 @@
                         </a>
                     </div>
 
-                    <div class="home_img">
-                        <svg class="home__blob" xmlns>
-                            
-
-                            <g>
-                                <image class="home__blob-img" x='12' y='18' xlink:href="/img/FB_IMG_1630002855335.jpg" />
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" xlink:href="/img/FB_IMG_1630002855335.jpg"/>
                             </g>
                         </svg>
                     </div>
@@ -270,25 +278,25 @@
             </div>
         </section>
 
-        <!------------Qualification Tabs-------------->
+        <!----===== Qualification Tabs ====----->
         <section class="qualification section">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
         
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
                         <i class="uil uil-graduation-cap qualification__icon"></i>Education
                     </div>
 
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button button--flex" data-target = "#work">
                         <i class="uil uil-briefcase-alt qualification__icon "></i>Work
                     </div>
                 </div>
 
                 <div class="qualification__sections">
                     <!-------- [qualification section 1]-------->
-                    <div class="qualification__content">
+                    <div class="qualification__content qualification__active" data-content id ="education">
                         <!-------qualification 1------>
                         <div class="qualification__data">
                             <div>
@@ -361,7 +369,7 @@
                     </div>
 
                      <!-------- [qualification section 2]-------->
-                     <div class="qualification__content">
+                     <div class="qualification__content" data-content id="work">
                         <!-------qualification 1------>
                         <div class="qualification__data">
                             <div>
@@ -430,6 +438,135 @@
                             </div>
 
                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <!-------===== Services ======-------->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What i offer </span>
+
+            <div class="services__container container grid">
+                <!----------- services 1---------->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">Ui/Ux <br> Designer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More<i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Web page development</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I position your company brand</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!----------- services 2---------->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Frontend <br> Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I develop the user interface</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Web page development</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I position your company brand</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------===== PORTFOLIO =====--------->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio__container container">
+                <div>
+                    <!----------portfolio 1--------->
+                    <div class="portfolio__content grid">
+                        <img src="/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Lorem ipsum dolor.</h3>
+                            <p class="porfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta deleniti neque corporis voluptatem porro!</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!----------portfolio 2--------->
+                    <div class="portfolio__content grid">
+                        <img src="/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Lorem ipsum dolor.</h3>
+                            <p class="porfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta deleniti neque corporis voluptatem porro!</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!----------portfolio 3--------->
+                    <div class="portfolio__content grid">
+                        <img src="/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Lorem ipsum dolor sit.</h3>
+                            <p class="porfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta deleniti neque corporis voluptatem porro!</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
