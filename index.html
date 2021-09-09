@@ -7,6 +7,8 @@
 
     <!----=========UNICONS=====------>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!---------====== SWIPER CLASS =====--------->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <!------======CSS======------->
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
@@ -528,10 +530,10 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent work</span>
 
-            <div class="portfolio__container container">
-                <div>
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
                     <!----------portfolio 1--------->
-                    <div class="portfolio__content grid">
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="/img/portfolio1.jpg" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
@@ -543,8 +545,9 @@
                             </a>
                         </div>
                     </div>
+
                     <!----------portfolio 2--------->
-                    <div class="portfolio__content grid">
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="/img/portfolio2.jpg" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
@@ -556,8 +559,9 @@
                             </a>
                         </div>
                     </div>
+
                     <!----------portfolio 3--------->
-                    <div class="portfolio__content grid">
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="/img/portfolio3.jpg" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
@@ -570,11 +574,21 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ---add arrow for pagination--- -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
     </main>
     <!------------main end------------->
 
+    <!---------swipper js------->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <!--------- main js -------->
     <script src="/js/main.js"></script>
 </body>
 </html>
