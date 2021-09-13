@@ -108,19 +108,87 @@ modalCloses.forEach((modalClose) => {
 /*------====== PORTFOLIO SWIPPER ======---------*/
 let swiper = new Swiper('.portfolio__container', {
     cssMode: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    // loop: true,
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
     pagination: {
-        el: '.swiper-pagination'
+        el: '.swiper-pagination',
+        clickable: true,
     },
-    mousewheel: true,
-    keyboard: true,
 });
 
+/*-------====== SCROLL SECTIONS ACTIVE LINK ======---------*/
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive() {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        const  sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        setionId = current.getAttribute('id');
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + setionId + ']').classList.add('active-link');
+        }else{
+            document.querySelector('.nav__menu a[href*=' + setionId + ']').classList.remove('active-link');
+
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive);
+
+/*---------====== CHANGE BACKGROUND HEADER =====-------*/
+function scrollHeader() {
+    const nav = document.getElementById('header');
+    if (this.scrollY >= 80){
+        nav.classList.add('scroll-header');
+    }else{
+        nav.classList.remove('scroll-header');
+    }
+}
+window.addEventListener(scroll, scrollHeader);
+
+/*------===== SHOW SCROLL TOP =====------*/
+function scrollUp() {
+    const scrollUp = document.getElementById('scroll-up');
+    if (this.scrollY >= 560){
+        scrollUp.classList.add('show-scroll');
+    }else{
+        scrollUp.classList.remove('show-scroll');
+    }
+}
+window.addEventListener('scroll', scrollUp);
 
 
+/*------======= DARK LIGHT THEME ======----------*/
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconTheme ='uil-sun';
 
 
+//previously selected topic 
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
 
+//we obtain the current theme that the interface has by validation the dark theme class
+const getCurrentTheme  = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
+
+//Validate if user previously chosed a topic
+if (selectedTheme) {
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    themeButton.classList[selectedIcon === 'uil-mooon' ? 'add' : 'remove'](iconTheme);
+}
+
+//Activate / deactivate 
+themeButton.addEventListener('click', () => {
+    //add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+    //we save the theme  and the current icon thatthe user chose
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
+})
