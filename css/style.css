@@ -1012,6 +1012,7 @@ MEDIA QUERY FOR SMALLER DEVICES
     }
     .home__content{
         padding-top: 5.5rem;
+        column-gap: 2rem;
     }
 } 
 /* for larger screens */    
