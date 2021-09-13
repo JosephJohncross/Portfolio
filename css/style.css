@@ -1014,5 +1014,20 @@ MEDIA QUERY FOR SMALLER DEVICES
         padding-top: 5.5rem;
         column-gap: 2rem;
     }
+    .home__blob{
+        width: 280px;
+    }
+    .home__scroll{
+        display: block;
+    }
+    .home__scroll-button{
+        margin-left: 3rem;
+    }
+    .about__container{
+        column-gap: 5rem;
+    }
+    .about__img{
+        width: 350px;
+    }
 } 
 /* for larger screens */    
