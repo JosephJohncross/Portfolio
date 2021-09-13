@@ -10,7 +10,7 @@ Variables css
     --header-height: 3rem;
 
     /* change favorite color */
-    --hue-color:1;
+    --hue-color:240;
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
