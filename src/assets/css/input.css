@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container__limiter {
+    @apply container mx-auto max-w-screen-large px-4 sm:px-5 ipad:px-7 desktop:px-8;
+  }
+  .animate-scale {
+    animation: scaling 15s infinite backwards 2s;
+    transition: transform 10s;
+    transform: scale(1.4);
+  }
+
+  .section__title{
+    @apply text-amber-500 font-outfit text-4xl font-bold
+  }
+
+  .grad1{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%,-50%);
+    opacity: .5;
+    /* background-color: transparent; */
+    background-image: radial-gradient(rgba(245, 159, 10, 0.502) 0%, rgba(245, 159, 10, 0.302) 0%, rgba(255, 255, 255, 0.502) 90% );
+    box-shadow: 0px 0px 20px 20px white, 0px 0px 40px 20px rgba(245, 159, 10, 0.302);
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  @keyframes scaling {
+    50%{
+      transform: scale(1.2)
+    }
+    0%, 100% {
+      transform: scale(1.4);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="320px" height="79.901665px" viewBox="0 0 320 79.901665" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L320 0L320 79.9017L0 79.9017L0 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="mask" clip-path="url(#clip_1)">
+    <path d="M0 0L320 0L320 79.9017L0 79.9017L0 0Z" id="mask" fill="none" fill-rule="evenodd" stroke="none" />
+    <g id="Mask" transform="translate(-0.4527893 2.3077126)">
+      <path d="M0 54.1769L0.0056668 53.9494C104.792 117.925 210.673 4.25019 319 56.3709L318.901 60.3987C210.574 8.27748 104.786 118.152 0 54.1769" id="path10227-4" fill="#000000" fill-rule="evenodd" stroke="none" />
+      <path d="M0.868423 79.9017L0.868423 63.4491C107.202 108.715 211.323 20.3666 319.868 59.1248L319.868 79.9017L0.868423 79.9017" id="path10233-5" fill="#232B2B" fill-opacity="0.9882353" fill-rule="evenodd" stroke="none" />
+      <g id="path10239-1" transform="translate(0.86842346 9.087006)">
+        <path d="M0 33.7996L0 29.7672C106.333 123.163 209.417 -56.5411 319 19.1217L319 42.8004C248.387 -5.95592 180.472 43.1619 112.647 59.2702C89.7365 64.9694 66.8267 66.1483 43.917 59.2702C29.3226 54.7526 14.6925 46.7041 0 33.7998" id="path_1" fill="#000000" fill-rule="evenodd" stroke="none" />
+        <path d="M0 33.7996L0 29.7672C106.333 123.163 209.417 -56.5411 319 19.1217L319 42.8004C248.387 -5.95592 180.472 43.1619 112.647 59.2702C89.7365 64.9694 66.8267 66.1483 43.917 59.2702C29.3226 54.7526 14.6925 46.7041 0 33.7998" id="Group" fill="none" fill-rule="evenodd" stroke="none" />
+      </g>
+      <path d="M0.286911 46.1428L0.286911 45.7148C106.857 133.934 210.172 -18.161 320 53.3089L320 57.9824C210.172 -13.4876 106.857 134.362 0.286911 46.1428" id="path10243-2" fill="#41B362" fill-rule="evenodd" stroke="none" />
+      <path d="M0.868423 31.5468L0.868423 31.1749C107.201 133.874 210.285 -62.0223 319.868 21.178L319.868 27.7805C210.285 -55.4206 107.201 134.246 0.868423 31.5468" id="path14599-1" fill="#41B362" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
