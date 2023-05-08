@@ -133,10 +133,10 @@ const Header = ({ toggleMobileNav }) => {
                         <Link to={"about"}>About</Link>
                       </li>
 
-                      {/* Portfolio */}
+                      {/* Projects */}
                       <div className="dropdown group relative ">
                         <li className="group roty group-hover:text-priColor flex items-center space-x-1 cursor-pointer hover:text-priColor">
-                          <span>Portfolio</span>
+                          <Link to={"projects"}>Projects</Link>
                         </li>
                       </div>
 

@@ -68,13 +68,13 @@ const MobileNav = ({ toggleMobileNav }) => {
               </li>
               <li className="font-semibold text-[#101828] px-4 w-full text-center">
                 <Link
-                  to={"portfolio"}
+                  to={"projects"}
                   className="text-white drop-down__item"
                   onClick={(e) => {
                     closeMobile(e);
                   }}
                 >
-                  Portfolio
+                  Projects
                 </Link>
               </li>
               <li className="font-semibold text-[#101828] px-4 w-full text-center">

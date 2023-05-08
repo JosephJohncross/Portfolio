@@ -9,6 +9,6 @@ export const CustomRoutes = () => {
   return [
     <Route path="/" element={<Homepage />} />,
     <Route path="/about" element={<About />} />,
-    <Route path="/portfolio" element={<Portfolio/>}/>,
+    <Route path="/projects" element={<Portfolio/>}/>,
   ];
 };
