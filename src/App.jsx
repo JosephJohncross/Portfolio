@@ -19,12 +19,12 @@ function App() {
 
       mobileNav.current.classList.add("mobile-show");
       mobileNav.current.classList.remove("translate-x-full");
-      mobileNav.current.classList.remove("hidden");
+      // mobileNav.current.classList.remove("hidden");
       setMobileState(true);
     } else {
       mobileNav.current.classList.remove("mobile-show");
       mobileNav.current.classList.add("translate-x-full");
-      mobileNav.current.classList.add("hidden");
+      // mobileNav.current.classList.add("hidden");
       setMobileState(false);
     }
   };
@@ -41,7 +41,7 @@ function App() {
             }
           >
             <div
-              className="relative translate-x-full transition-transform duration-700 z-50 hidden"
+              className="relative translate-x-full transition-transform duration-700 z-50"
               ref={mobileNav}
             >
               <MobileNav toggleMobileNav={toggleMobileNav} />
