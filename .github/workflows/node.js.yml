@@ -38,5 +38,6 @@ jobs:
       working-directory: portfolio-sanity
     - name: Deploy
       run: sanity deploy
+      working-directory: portfolio-sanity
     # - run: npm run build --if-present
     - run: npm test
