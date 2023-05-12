@@ -3,13 +3,10 @@ import { useParams } from "react-router-dom";
 import project1 from "../../assets/images/project1.svg";
 import { useImmerReducer } from "use-immer";
 
-import BlockContent from "@sanity/block-content-to-react";
 
 import imageUrlBuilder from "@sanity/image-url";
 import createSanity from "../../client";
-import { PortableText } from "@portabletext/react";
-import { Tooltip } from "../common/Tooltip";
-import profilepic from "../../assets/images/profile.jpg";
+
 
 const builder = imageUrlBuilder(createSanity);
 const urlFor = (source) => {
@@ -62,6 +59,8 @@ const Project = () => {
             url
           },
         },
+        github,
+        demo,
         "technologies": *[_type=='logo']{ 
           logo{
             asset->{
@@ -91,12 +90,6 @@ const Project = () => {
       {loading ? (
         <div className="absolute text-start bg-sec pt-32 mini:pt-20 top-0 left-0 right-0 bottom-0 z-50">
           <div className="rounded-full w-20 h-20 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 shadow-shadow1 animate-pulse border border-amber-500">
-            {/* <div className="w-20 h-20 bg-transparent border-pgreen"></div> */}
-            {/* <img
-              src={profilepic}
-              alt=""
-              className="w-full h-full rounded-full anime-loader"
-            /> */}
           </div>
         </div>
       ) : (
@@ -117,6 +110,10 @@ const Project = () => {
                 pariatur hic, odit ea cumque a dicta fugiat exercitationem qui.
                 Corrupti unde beatae veniam?
               </p>
+            </div>
+            <div className="flex font-semibold font-nunito space-x-5 text-pgreen py-4">
+                <a href={postData.github} className="">Source code</a>
+                <p className={postData.demo}>Live Demo</p>
             </div>
 
             {/* About project  */}

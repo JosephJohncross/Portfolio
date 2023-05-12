@@ -38,6 +38,16 @@ export default defineType({
       ],
     }),
     defineField({
+      name: 'github',
+      title: 'Github Link',
+      type: 'string',
+    }),
+    defineField({
+      name: 'demo',
+      title: 'Live Demo Link',
+      type: 'string',
+    }),
+    defineField({
         name: 'tags',
         title: 'Tags',
         type: 'array',
