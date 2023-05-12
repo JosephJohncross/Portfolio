@@ -4,6 +4,6 @@ export default defineCliConfig({
   api: {
     projectId: '60ezqqkb',
     dataset: 'production',
-    hostname: 'jprofile.sanity.studio'
+    hostname: 'jibochiprofile.sanity.studio'
   }
 })
