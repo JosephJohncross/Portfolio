@@ -10,7 +10,7 @@ const Button = ({ shade, content, icon }) => {
           "rounded-full px-8 py-2 font-mont text-lg  text-[#F2F2F2] bg-[#41B362] shadow-md hover:bg-dark1 hover:shadow-sm text-sm md:text-sm flex justify-center items-center";
         break;
       case "bordered-green":
-        classStyle = `rounded-md px-6 py-2 font-mont text-lg border border-uniuyoGreen text-uniuyoGreen hover:text-[#F2F2F2] hover:bg-uniuyoGreen hover:shadow-sm transition-colors text-sm md:text-sm flex justify-center items-center`;
+        classStyle = `rounded-full px-6 py-2 font-mont font-semibold text-lg border border-[#41B362] text-[#41B362] hover:text-[#F2F2F2] hover:bg-[#41B362] hover:shadow-sm transition-colors text-sm md:text-sm flex justify-center items-center`;
         break;
       case "bordered-white":
         classStyle = `rounded-full px-8 py-2 bg-transparent font-mont text-lg border border-[#F2F2F2] text-[#F2F2F2] hover:text-pri hover:bg-[#F2F2F2] hover:shadow-sm transition-colors text-sm md:text-sm flex justify-center items-center`;
