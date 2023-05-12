@@ -38,9 +38,9 @@ jobs:
       working-directory: portfolio-sanity
     - name: Deploy
       run: |
+          SANITY_STUDIO_HOSTNAME: jibochiprofile.sanity.studio
           set -e
           SANITY_AUTH_TOKEN="${{ secrets.SANITY_AUTH_TOKEN }}" npx sanity deploy
-          SANITY_STUDIO_HOSTNAME: jibochiprofile.sanity.studio
       working-directory: portfolio-sanity
     # - run: npm run build --if-present
     - run: npm test
