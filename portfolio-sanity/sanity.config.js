@@ -9,6 +9,7 @@ export default defineConfig({
 
   projectId: '60ezqqkb',
   dataset: 'production',
+  hostname: 'jprofile.sanity.studio',
 
   plugins: [deskTool(), visionTool()],
 
