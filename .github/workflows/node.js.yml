@@ -39,7 +39,7 @@ jobs:
     - name: Deploy
       run: |
           set -e
-          SANITY_AUTH_TOKEN="${{ secrets.SANITY_AUTH_TOKEN }}" npx sanity deploy jport.sanity.studio
+          SANITY_AUTH_TOKEN="${{ secrets.SANITY_AUTH_TOKEN }}" npx sanity deploy 
       working-directory: portfolio-sanity
     # - run: npm run build --if-present
     - run: npm test
