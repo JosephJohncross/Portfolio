@@ -3,6 +3,7 @@ import {defineCliConfig} from 'sanity/cli'
 export default defineCliConfig({
   api: {
     projectId: '60ezqqkb',
-    dataset: 'production'
+    dataset: 'production',
+    hostname: 'jprofile.sanity.studio'
   }
 })
