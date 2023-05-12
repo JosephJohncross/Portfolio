@@ -3,10 +3,8 @@ import { useParams } from "react-router-dom";
 import project1 from "../../assets/images/project1.svg";
 import { useImmerReducer } from "use-immer";
 
-
 import imageUrlBuilder from "@sanity/image-url";
 import createSanity from "../../client";
-
 
 const builder = imageUrlBuilder(createSanity);
 const urlFor = (source) => {
@@ -50,10 +48,11 @@ const Project = () => {
     createSanity
       .fetch(
         `*[slug.current == $slug]{
+          _id,
           title,
           slug,          
          body,
-         softwareDetails->[]{},
+         softwareDetails,
          mainImage{
           asset->{
             url
@@ -61,13 +60,7 @@ const Project = () => {
         },
         github,
         demo,
-        "technologies": *[_type=='logo']{ 
-          logo{
-            asset->{
-              _id,
-              url
-            },
-          },
+        "technologies": technologies[]->{
           name,
         }
        }`,
@@ -76,9 +69,9 @@ const Project = () => {
       .then((data) => {
         console.log(data);
         setPostData(data[0]);
-        setTimeout(()=>{
+        setTimeout(() => {
           setLoading(false);
-        }, 1500)
+        }, 1500);
       })
       .catch(console.error);
   }, [slug]);
@@ -89,8 +82,7 @@ const Project = () => {
     <>
       {loading ? (
         <div className="absolute text-start bg-sec pt-32 mini:pt-20 top-0 left-0 right-0 bottom-0 z-50">
-          <div className="rounded-full w-20 h-20 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 shadow-shadow1 animate-pulse border border-amber-500">
-          </div>
+          <div className="rounded-full w-20 h-20 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 shadow-shadow1 animate-pulse border border-amber-500"></div>
         </div>
       ) : (
         <div className="relative text-start bg-sec pt-44 mini:pt-20 ">
@@ -112,8 +104,12 @@ const Project = () => {
               </p>
             </div>
             <div className="flex font-semibold font-nunito space-x-5 text-pgreen py-4">
-                <a href={postData.github} className="">Source code</a>
-                <p className={postData.demo}>Live Demo</p>
+              <a href={postData.github} target="_blank" className="">
+                Source code
+              </a>
+              <a href={postData.demo} target="_blank" className="">
+                Live Demo
+              </a>
             </div>
 
             {/* About project  */}
@@ -378,11 +374,7 @@ const Project = () => {
                   <div className="ipad:grid grid-cols-1 ipad:grid-cols-2 ipad:gap-x-6 gap-y-4 ipad:gap-y-4 w-max p-4 rounded-md flex-col flex items-center">
                     {postData.technologies.map((technology) => {
                       return (
-                        <img
-                          src={technology.logo.asset.url}
-                          className="h-12 ipad:h-9"
-                          key={technology.logo.asset.id}
-                        />
+                        <p className="h-12 ipad:h-9" key={technology.name} >{technology.name}</p>
                       );
                     })}
                   </div>
@@ -392,11 +384,7 @@ const Project = () => {
                     <div className="ipad:grid grid-cols-1 ipad:grid-cols-2 gap-y-4 ipad:gap-y-4 w-max p-4 rounded-md flex-col flex items-center">
                       {postData.technologies.map((technology) => {
                         return (
-                          <img
-                            src={technology.logo.asset.url}
-                            className="h-12 ipad:h-9"
-                            key={technology.logo.asset.id}
-                          />
+                          <p className="h-12 ipad:h-9" key={technology.name} >{technology.name}</p>
                         );
                       })}
                     </div>

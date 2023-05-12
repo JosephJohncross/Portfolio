@@ -37,7 +37,6 @@ const Projects = () => {
             },
           },
           tags[]->{title},
-          technologies,
           categories[]->{title},
           softwareDetails
         }`
