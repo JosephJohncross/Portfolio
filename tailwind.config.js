@@ -10,7 +10,10 @@ export default {
         pgreen: "#41B362",
         alt1: "#1b1c20",
       },
-      boxShadow: {},
+      boxShadow: {
+        'shadow1': "0px 0px 40px 16px rgba(245, 158, 11, 0.3)",
+        'shadow2': "0px 0px 48px 18px rgba(245, 158, 11, 0.5)",
+      },
       screens: {
         small: "500px",
         ipad: "700px",

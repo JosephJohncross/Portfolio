@@ -18,7 +18,7 @@ const Header = ({ toggleMobileNav }) => {
             <div className="md:pb-0">
               <div
                 id=""
-                className="flex justify-between items-center font-inter md:px-0 px-6 py-5"
+                className="flex justify-between items-center font-inter md:px-0 px-6 mini:py-5"
               >
                 <div className="">
                   <span id="logo pb-10 md:pb-0">
@@ -120,7 +120,7 @@ const Header = ({ toggleMobileNav }) => {
 
                 {/* navigation */}
                 {/* Middle section */}
-                <div className="header-middle text-white ">
+                <div className="header-middle text-white">
                   <nav className="flex justify-center items-center space-x-5 md:space-x-5 ">
                     <ul className=" hidden lg:flex lg:justify-evenly space-x-12">
                       {/* Home */}

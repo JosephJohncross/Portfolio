@@ -37,6 +37,16 @@
     z-index: 1;
   }
 
+  .anime-loader {
+    animation: infinite loadAnimation 1.7s;
+    transition: 1s ease-in;
+  }
+
+  .anime-glow {
+    animation: infinite loadGlow 1.7s;
+    transition: 1s ease-out shadow;
+  }
+
   .mobile-show {
     @apply translate-x-0;
   }
@@ -48,6 +58,26 @@
     0%,
     100% {
       transform: scale(1.4);
+    }
+  }
+
+  @keyframes loadAnimation {
+    0%,
+    100% {
+      @apply -translate-y-8
+    }
+    50% {
+      @apply translate-y-0
+    }
+  }
+
+  @keyframes loadGlow {
+    0%,
+    100% {
+      @apply shadow-shadow1 scale-100
+    }
+    50% {
+      @apply shadow-shadow2 scale-110
     }
   }
 }
