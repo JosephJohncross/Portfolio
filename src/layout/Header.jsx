@@ -143,7 +143,7 @@ const Header = ({ toggleMobileNav }) => {
                       {/* Blog */}
                     <div className="hidden lg:block dropdown group relative ">
                       <li className="group group-hover:text-priColor roty flex items-center space-x-1 cursor-pointer hover:text-priColor">
-                        <span>Blog</span>
+                        <Link to={"blog"}>Blog</Link>
                       </li>
                     </div>
                     </ul>

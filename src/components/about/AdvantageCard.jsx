@@ -4,7 +4,7 @@ const AdvantageCard = ({ gradient, content, textColor, delay }) => {
   const gradientClass = `${gradient} w-40 h-24 rounded-lg relative m`;
 
   return (
-    <div className=" w-1/4">
+    <div className=" w-1/4 hover:z-10 hover:scale-105 hover:transition duration-500">
       <div
         className=""
         data-aos="fade-left"

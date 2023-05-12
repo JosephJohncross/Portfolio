@@ -79,7 +79,7 @@ const MobileNav = ({ toggleMobileNav }) => {
               </li>
               <li className="font-semibold text-[#101828] px-4 w-full text-center">
                 <Link
-                  to={""}
+                  to={"blog"}
                   className="text-white drop-down__item"
                   onClick={(e) => {
                     closeMobile(e);
