@@ -940,6 +940,10 @@ video {
   height: 20rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .h-\[2px\] {
   height: 2px;
 }
@@ -968,10 +972,6 @@ video {
   width: 5rem;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
 .w-40 {
   width: 10rem;
 }
@@ -986,6 +986,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .w-96 {
@@ -1060,10 +1064,6 @@ video {
 .scale-90 {
   --tw-scale-x: .9;
   --tw-scale-y: .9;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1286,6 +1286,10 @@ video {
 .bg-pgreen {
   --tw-bg-opacity: 1;
   background-color: rgb(65 179 98 / var(--tw-bg-opacity));
+}
+
+.bg-pgreen\/20 {
+  background-color: rgb(65 179 98 / 0.2);
 }
 
 .bg-pri {
@@ -1670,6 +1674,12 @@ video {
 .shadow-shadow1 {
   --tw-shadow: 0px 0px 45px 18px rgba(245, 158, 11, 0.3);
   --tw-shadow-colored: 0px 0px 45px 18px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-shadow3 {
+  --tw-shadow: 0px 0px 48px 18px rgba(65, 179, 98, 0.3);
+  --tw-shadow-colored: 0px 0px 48px 18px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 

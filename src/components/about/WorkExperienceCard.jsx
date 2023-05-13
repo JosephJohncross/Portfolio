@@ -31,6 +31,7 @@ const WorkExperienceCard = ({ year, position, company, link, img }) => {
         <p className="">
           <a href="">{link || ""}</a>
         </p>
+        <span className="h-7 w-7 animate-pulse block bg-pgreen/20 rounded-full shadow-shadow3"></span>
       </div>
 
       {/* Detailed Info */}

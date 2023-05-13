@@ -13,6 +13,7 @@ export default {
       boxShadow: {
         'shadow1': "0px 0px 45px 18px rgba(245, 158, 11, 0.3)",
         'shadow2': "0px 0px 48px 18px rgba(245, 158, 11, 0.5)",
+        'shadow3': "0px 0px 48px 18px rgba(65, 179, 98, 0.3)",
       },
       screens: {
         small: "500px",

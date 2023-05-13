@@ -85,7 +85,7 @@ const Project = () => {
           <div className="rounded-full w-20 h-20 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 shadow-shadow1 animate-pulse border border-amber-500"></div>
         </div>
       ) : (
-        <div className="relative text-start bg-sec pt-44 mini:pt-20 ">
+        <div className="relative text-start bg-sec pt-32 mini:pt-20 ">
           <div className="container__limiter">
             <p className="text-amber-500 font-medium text-xl ipad:text-2xl mini:text-3xl font-outfit">
               {postData.title}
@@ -374,17 +374,17 @@ const Project = () => {
                   <div className="ipad:grid grid-cols-1 ipad:grid-cols-2 ipad:gap-x-6 gap-y-4 ipad:gap-y-4 w-max p-4 rounded-md flex-col flex items-center">
                     {postData.technologies.map((technology) => {
                       return (
-                        <p className="h-12 ipad:h-9" key={technology.name} >{technology.name}</p>
+                        <p className="h-12 ipad:h-9" key={technology?.name} >{technology?.name}</p>
                       );
                     })}
                   </div>
                 </div>
                 {state.technology && (
                   <div className="text-pgreen mt-5">
-                    <div className="ipad:grid grid-cols-1 ipad:grid-cols-2 gap-y-4 ipad:gap-y-4 w-max p-4 rounded-md flex-col flex items-center">
+                    <div className="ipad:grid grid-cols-1 ipad:grid-cols-2 gap-y-4 ipad:gap-y-4 w-max p-4 rounded-md flex-col flex">
                       {postData.technologies.map((technology) => {
                         return (
-                          <p className="h-12 ipad:h-9" key={technology.name} >{technology.name}</p>
+                          <p className="h-12 ipad:h-9" key={technology?.name} >{technology?.name}</p>
                         );
                       })}
                     </div>

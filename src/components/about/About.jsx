@@ -4,6 +4,7 @@ import WorkExperience from "./WorkExperience";
 import RecentProjects from "./RecentProjects";
 
 import profilepic from "../../assets/images/profile.jpg";
+import Skillset from "./Skillset";
 
 
 const About = () => {
@@ -32,6 +33,7 @@ const About = () => {
         <>
           <Advantage />
           <WorkExperience />
+          <Skillset/>
           <RecentProjects />
         </>
       )}
