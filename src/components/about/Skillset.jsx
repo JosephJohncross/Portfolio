@@ -20,7 +20,7 @@ const Skillset = () => {
               .NET
             </p>
 
-            <div className="mt-5 flex gap-5 mini:gap-12 flex-wrap grid-cols-3">
+            <div className="mt-5 flex gap-2 sm:gap-5 mini:gap-12 flex-wrap grid-cols-4 mini:grid-cols-3">
               <div data-skill="ASP.NET Core" class="skill">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
@@ -82,7 +82,7 @@ const Skillset = () => {
             <p className="text-pgreen font-outfit font-semibold text-xl">
               Python
             </p>
-            <div className="mt-5 flex gap-5 mini:gap-12 flex-wrap grid-cols-3">
+            <div className="mt-5 flex gap-2 sm:gap-5 mini:gap-12 flex-wrap grid-cols-4 mini:grid-cols-3">
               <div data-skill="ASP.NET Core" class="skill">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"

@@ -53,8 +53,6 @@
 
   .skill {
     /* @apply w-[80px] h-[80px] m-2 rounded-[50%]  */
-    width: 80px;
-    height: 80px;
     margin: 0.5rem;
     border-radius: 50%;
     box-shadow: -3px 0px 3px 3px rgba(0, 0, 0, 0.2),
@@ -64,6 +62,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .skill{
+    @apply w-[60px] h-[60px] mini:w-[80px] mini:h-[80px]
   }
   .skill img {
     width: 70%;
