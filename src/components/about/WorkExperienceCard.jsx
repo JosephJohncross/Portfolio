@@ -4,6 +4,9 @@ const WorkExperienceCard = ({ year, position, company, link, img }) => {
   const jobDetail = useRef();
 
   const showjobDetails = (e) => {
+    if (e.target.tagName == "A"){
+      return;
+    }
     e.preventDefault();
     jobDetail.current.classList.toggle("hidden");
   };
@@ -17,21 +20,21 @@ const WorkExperienceCard = ({ year, position, company, link, img }) => {
         }}
       >
         {/* Year */}
-        <p className="text-3xl text-amber-500 font-inter font-medium">{year}</p>
+        <p className="text-3xl text-amber-500 font-inter font-medium mini:w-2/5">{year}</p>
         {/* Logo */}
         <div className="rounded-full w-20 h-20 bg-white">
           <img src={img} />
         </div>
         {/* Position */}
-        <div className="flex flex-col">
+        <div className="flex flex-col mini:w-1/5">
           <p className="text-lg font-mont text-white">{position}</p>
-          <p className="font-outfit text-pgreen">{company || ""}</p>
+          <p className="font-outfit text-xl text-pgreen">{company || ""}</p>
         </div>
         {/* Link */}
-        <p className="">
-          <a href="">{link || ""}</a>
+        <p className="font-outfit text-white">
+          <a href={link || ""} target="_blank" className="underline underline-offset-4 hover:text-amber-500">Visit</a>
         </p>
-        <span className="h-7 w-7 animate-pulse block bg-pgreen/20 rounded-full shadow-shadow3"></span>
+        {/* <span className="h-7 w-7 animate-pulse block bg-pgreen/20 rounded-full shadow-shadow3"></span> */}
       </div>
 
       {/* Detailed Info */}

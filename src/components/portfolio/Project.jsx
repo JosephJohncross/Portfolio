@@ -372,7 +372,7 @@ const Project = () => {
                 </div>
                 <div className="text-pgreen mt-5 hidden ipad:block">
                   <div className="ipad:grid grid-cols-1 ipad:grid-cols-2 ipad:gap-x-6 gap-y-4 ipad:gap-y-4 w-max p-4 rounded-md flex-col flex items-center">
-                    {postData.technologies.map((technology) => {
+                    {postData.technologies?.map((technology) => {
                       return (
                         <p className="h-12 ipad:h-9" key={technology?.name} >{technology?.name}</p>
                       );
@@ -382,7 +382,7 @@ const Project = () => {
                 {state.technology && (
                   <div className="text-pgreen mt-5">
                     <div className="ipad:grid grid-cols-1 ipad:grid-cols-2 gap-y-4 ipad:gap-y-4 w-max p-4 rounded-md flex-col flex">
-                      {postData.technologies.map((technology) => {
+                      {postData.technologies?.map((technology) => {
                         return (
                           <p className="h-12 ipad:h-9" key={technology?.name} >{technology?.name}</p>
                         );

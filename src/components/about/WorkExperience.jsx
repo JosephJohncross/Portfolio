@@ -38,17 +38,31 @@ const WorkExperience = () => {
           <div className="pt-20 flex flex-col gap-y-6">
             <WorkExperienceCard
               img={""}
-              link={""}
-              company={"BOurtmouth, New Jersey"}
+              link={"www.coinsher.com"}
+              company={"Coinsher LLC"}
               position={"Frontend Developer"}
-              year={"2021-2022"}
+              year={"Sept, 2022 - Present"}
             />
             <WorkExperienceCard
               img={""}
+              link={"https://twitter.com/hnginternship"}
+              company={"HNG"}
+              position={"Backend Developer"}
+              year={"Oct, 2021 - Dec, 2022"}
+            />
+             <WorkExperienceCard
+              img={""}
+              link={"https://training.zuri.team"}
+              company={"Zuri"}
+              position={"Full Stack Developer (Internship)"}
+              year={"Oct, 2021 - Dec, 2022"}
+            />
+             <WorkExperienceCard
+              img={""}
               link={""}
-              company={"BOurtmouth, New Jersey"}
-              position={"Frontend Developer"}
-              year={"2021-2022"}
+              company={"AITech"}
+              position={"Software Developer"}
+              year={"Jan, 2021 - July, 2022"}
             />
           </div>
         </div>
