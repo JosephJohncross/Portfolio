@@ -28,14 +28,27 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'referenceImages',
-      title: 'Additional Images',
+      name: 'image1',
+      title: 'Image 1',
       type: 'image',
-      of: [
-        {
-          type: 'image',
-        },
-      ],
+      options: {
+        hotspot: true,
+      },
+    }),defineField({
+      name: 'image2',
+      title: 'Image 2',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
+      name: 'image3',
+      title: 'Image 3',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
     }),
     defineField({
       name: 'github',

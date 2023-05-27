@@ -91,7 +91,7 @@ const Project = () => {
               {postData.title}
             </p>
             <div className="mt-10">
-              <img src={project1} alt="" className="w-full" />
+              <img src={postData.mainImage.asset.url || project1} alt="" className="w-full" />
             </div>
             {/* Brief description of project */}
             <div className="mini:flex justify-center max-w-3xl">

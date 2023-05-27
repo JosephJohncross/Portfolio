@@ -20,13 +20,13 @@ const WorkExperienceCard = ({ year, position, company, link, img }) => {
         }}
       >
         {/* Year */}
-        <p className="text-3xl text-amber-500 font-inter font-medium mini:w-2/5">{year}</p>
+        <p className="text-xl sm:text-2xl mini:text-3xl text-amber-500 font-inter font-medium mini:w-2/5">{year}</p>
         {/* Logo */}
-        <div className="rounded-full w-20 h-20 bg-white">
-          <img src={img} />
+        <div className="rounded-full w-16 h-16 mini:w-20 mini:h-20 bg-white">
+          {img}
         </div>
         {/* Position */}
-        <div className="flex flex-col mini:w-1/5">
+        <div className="flex flex-col mini:w-1/5 text-sm mini:text-lg">
           <p className="text-lg font-mont text-white">{position}</p>
           <p className="font-outfit text-xl text-pgreen">{company || ""}</p>
         </div>

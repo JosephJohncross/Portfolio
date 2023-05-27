@@ -37,7 +37,7 @@ const ProjectCard = ({ title, tag, img, link, categories }) => {
         <img
           src={img}
           alt=""
-          className="rounded-md absolute top-0 left-0 bottom-0 right-0 h-full z-[1]"
+          className="rounded-md absolute top-1/2 -translate-y-1/2 left-0 bottom-0 right-0 z-[1]"
         />
         <div className="absolute font-nunito z-20 top-0 bottom-0 left-0 right-0 bg-black/50 rounded-md  translate-y-full group-hover:translate-y-1/2 transition-transform delay-100 duration-500 px-5 py-4">
           <p className="text-3xl text-amber-500 font-medium">{title}</p>

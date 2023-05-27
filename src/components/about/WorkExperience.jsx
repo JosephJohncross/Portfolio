@@ -1,7 +1,9 @@
 import React from "react";
 import WorkExperienceCard from "./WorkExperienceCard";
+import Coinsher from "./Coinsher";
 
 const WorkExperience = () => {
+  
   return (
     <>
       <section className="py-20  relative">
@@ -37,7 +39,7 @@ const WorkExperience = () => {
           {/* Experience */}
           <div className="pt-20 flex flex-col gap-y-6">
             <WorkExperienceCard
-              img={""}
+              img={Coinsher}
               link={"www.coinsher.com"}
               company={"Coinsher LLC"}
               position={"Frontend Developer"}
