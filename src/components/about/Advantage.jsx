@@ -37,7 +37,7 @@ const Advantage = () => {
                 <div className="absolute bottom-0 left-0 -translate-x-10 translate-y-4 py-5 px-10 rounded-md bg-gradient-to-r from-amber-500 to-black/20 backdrop:blur-lg font-nunito">
                   <p className="font-bold text-white">Years of Experience</p>
                   <p className="text-center text-3xl text-white font-semibold">
-                    2+
+                    3+
                   </p>
                 </div>
                 {/* </div> */}
